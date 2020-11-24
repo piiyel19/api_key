@@ -1,6 +1,6 @@
 # api_key
 
-Sistem ini dibangunkan untuk satu syarikat kontraktor yang mengurus sub con yang melakukan aktiviti pekerjaan.
+Sistem ini dibangunkan menggunakan Framework Appku untuk satu syarikat kontraktor yang mengurus sub con yang melakukan aktiviti pekerjaan.
 
 Terdiri daripada admin , kontraktor, kewangan dan pengurusan aktiviti organisasi.
 

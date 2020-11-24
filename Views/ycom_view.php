@@ -38,7 +38,8 @@
             //return $this->controller->sayWelcome();
         }
 
-        
+            
+        /* LOGIN */
         public function login()
         {
             $table = 'login';
@@ -62,4 +63,50 @@
             session_start();
             session_destroy();
         }
+        /* END */
+
+
+
+        /* REGISTER */
+        public function register()
+        {
+            $table = 'profile';
+            return $this->controller->register($table);
+        }
+        /* END */
+
+
+
+
+        /* TICKET */
+        function form_ticket()
+        {
+            $base = $this->config->url();
+            $route = '/ycom/create_ticket';
+            return $this->view->templates('form_ticket', array('url' => $base.$route));
+        }
+
+        function create_ticket()
+        {
+            $table = 'ticket';
+            //var_dump($_FILES); exit();
+            //var_dump($_FILES['userfile']["name"]); exit();
+            return $this->controller->create_ticket($table);
+        }
+
+
+
+        function view_image()
+        {
+            $conn = $this->config->database();
+            $sql = "select userfile from ticket";
+            $result = mysqli_query($conn,$sql);
+            $row = mysqli_fetch_array($result);
+
+            $image = $row['userfile'];
+            $image_src = "upload/".$image;
+
+            echo '<img src="'.$image.'">';
+        }
+        /* END */
     }

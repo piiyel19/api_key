@@ -49,7 +49,8 @@
 		function base_url()
 		{
 			$base = 'http://localhost/';
-			$base_url = $base.$this->folder_project();
+			$base_url = $base.$this->folder_project().'/';
+			return $base_url;
 		}
 
 

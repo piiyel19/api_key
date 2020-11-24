@@ -96,6 +96,27 @@
 
             $conn -> close();
         }
+
+
+        function check_user($id_user)
+        {
+            $config = new Config();
+            $conn = $config->database();
+
+            $sql="SELECT username FROM profile WHERE id_user='$id_user'";
+
+            $rowcount = '';
+            if ($result=mysqli_query($conn,$sql))
+            {
+                // Return the number of rows in result set
+                $rowcount=mysqli_num_rows($result);
+
+            }
+
+            return $rowcount;
+
+            mysqli_close($con);
+        }
         
     }
         

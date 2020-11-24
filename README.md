@@ -4,7 +4,7 @@ Sistem ini dibangunkan untuk satu syarikat kontraktor yang mengurus sub con yang
 
 Terdiri daripada admin , kontraktor, kewangan dan pengurusan aktiviti organisasi.
 
-Projek ini hanya mengurus backend process menggunakan Restful API dan boleh diguna diman-mana bahasa pengaturcaraan web applikasi dan mobile aplikasi.
+Projek ini hanya mengurus backend process menggunakan Restful API dan boleh diguna dimana-mana bahasa pengaturcaraan web applikasi dan mobile aplikasi.
 
 Saya lebih mengutamakan keselamatan dan kecepatan dalam aplikasi.
 

@@ -96,6 +96,14 @@
 
 
 
+        function create_boq()
+        {
+            $table = 'boq';
+            return $this->controller->create_boq($table);
+        }
+
+
+
         function view_image()
         {
             $conn = $this->config->database();
